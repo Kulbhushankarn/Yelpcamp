@@ -1,0 +1,32 @@
+<% layout('layouts/boilerplate')%>
+<link rel="stylesheet" href="/public/stylesheets/style.css">
+
+    <!-- Main Site -->
+    <main id="site-main">
+        <div class="container mt-0 card" >
+            <div class="box-nav d-flex justify-between">
+                <a href="/add_user" class="border-shadow">
+                    <span class="text-gradient">New User <i class="fas fa-user"></i></span>
+                </a>
+            </div>
+
+            <!-- form handling -->
+            <form action="/index" method="POST">
+                <table class="table table-hover">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col"></th>
+                            <th scope="col">Emp ID</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Department</th>
+                            <th scope="col">Status</th>
+                            <th scope="col">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <%- include('layouts/_show') %>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+    </main>

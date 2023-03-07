@@ -1,0 +1,66 @@
+<% layout('layouts/boilerplate')%>
+
+<!--<h1>All Cases</h1>
+<div>
+    <a href="/campgrounds/new">Add Case</a>
+</div>
+<% for (let campground of campgrounds){%>
+<div class="card" mb-3>
+    <div class="row">
+        <div class="col-md-4">
+            <img class="img-fluid" alt="" src="<%=campground.image%>">
+        </div>
+        <div class="col-md-8">
+            <div class="card-body">
+                <h5 class="card-title"><%= campground.title %> </h5>
+                <p class="card-text"><%= campground.description %></p>
+                <p class="card-text">
+                    <small class="text-muted"><%= campground.location%></small>
+                </p>
+                <a class="btn btn-primary" href="/campgrounds/<%=campground._id%>">View <%=campground.title%></a>
+            </div>
+        </div>
+    </div>
+</div>
+<% }%>
+
+<% layout('layouts/boilerplate')%>
+<link rel="stylesheet" href="/public/stylesheets/style.css">-->  
+
+<!-- Main Site -->
+
+
+<div class="card-content">
+                            
+    <h2 class="card-title">Total Regd Cases</h2>
+    <span class="stats-counter">
+
+        <h2 class="counter">3</h2></span>
+</div>
+
+
+    <main id="site-main">
+        <div class="container mt-0 card" >
+            <div class="box-nav d-flex justify-between">
+               
+            </div>
+
+            <!-- form handling -->
+            <form action="/index" method="POST">
+                <table class="table table-hover">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col"></th>
+                            <th scope="col">#Ref. No</th>
+                            <th scope="col">Case Details</th>
+                            <th scope="col">Status</th>
+                            <th scope="col">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                       
+                    </tbody>
+                </table>
+            </form>
+        </div>
+    </main>
